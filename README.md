@@ -10,12 +10,6 @@
 
 ## 🛠️ Integrantes do grupo:
 
-<div style="text-align: justify;">
-  Henrique Impastaro   RA:24.01777-9<br>
-  Cauê Almiron         RA:24.01734-5<br>
-  Gustavo Seripierri   RA:24.00630-0<br>
-  Murilo Rodrigues     RA:24.01780-9<br>
-  Murilo Kaspar        RA:24.01178-9<br>
 <table style="width:100%; text-align:left;">
   <tr>
     <th>Nome</th>
