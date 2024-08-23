@@ -16,9 +16,37 @@
   Gustavo Seripierri   RA:24.00630-0<br>
   Murilo Rodrigues     RA:24.01780-9<br>
   Murilo Kaspar        RA:24.01178-9<br>
-  Eduardo Kenzo Fujii  RA:24.00926-0<br>
-</div>
- 
+<table style="width:100%; text-align:left;">
+  <tr>
+    <th>Nome</th>
+    <th>RA</th>
+  </tr>
+  <tr>
+    <td>Henrique Impastaro</td>
+    <td>24.01777-9</td>
+  </tr>
+  <tr>
+    <td>Cauê Almiron</td>
+    <td>24.01734-5</td>
+  </tr>
+  <tr>
+    <td>Gustavo Seripierri</td>
+    <td>24.00630-0</td>
+  </tr>
+  <tr>
+    <td>Murilo Rodrigues</td>
+    <td>24.01780-9</td>
+  </tr>
+  <tr>
+    <td>Murilo Kaspar</td>
+    <td>24.01178-9</td>
+  </tr>
+  <tr>
+    <td>Eduardo Kenzo Fujii</td>
+    <td>24.00926-0</td>
+  </tr>
+</table>
+
 ---
 
 ## 🔧 Funções:
