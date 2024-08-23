@@ -1,4 +1,6 @@
-# Matemática no Metrô
+<div style="text-align: center;">
+    # Matemática no Metrô
+</div>
 
 Repositório do grupo de PII em Front End <br>
 2° Semestre dos cursos de TI do Instituto Mauá de Técnologia.
