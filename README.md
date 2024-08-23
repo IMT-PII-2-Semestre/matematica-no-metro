@@ -1,7 +1,7 @@
 # IMT - PII de Front End - Matemática no Metrô
 
 <div align="center">
-  <img src="hhttps://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Metr%C3%B4-SP_logo.svg/2560px-Metr%C3%B4-SP_logo.svg.png" alt="Logo do Metrô" style="border-radius: 50%;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Metr%C3%B4-SP_logo.svg/2560px-Metr%C3%B4-SP_logo.svg.png" alt="Logo do Metrô" style="border-radius: 50%;">
   <h2>Repositório do grupo de PII em Front End</h2>
   <p>2° Semestre dos cursos de TI do Instituto Mauá de Técnologia</p>
 </div>
@@ -13,14 +13,15 @@
 <div style="text-align: justify;">
   Henrique Impastaro   RA:24.01777-9  
   Cauê Almiron         RA:24.01734-5  
-  Gustavo Seripierri   RA:  
-  Murilo Rodrigues     RA:24.01780-9
+  Gustavo Seripierri   RA:24.00630-0  
+  Murilo Rodrigues     RA:24.01780-9  
+  Murilo Kaspar        RA:24.01178-9  
   Eduardo Kenzo Fujii  RA:24.00926-0  
 </div>
 
 ---
 
-## 🔧 Funções
+## 🔧 Funções:
 
 - **Função 1**: Descrever
 - **Função 2**: Descrever
