@@ -1,19 +1,16 @@
+<!-- Henrique Impastaro -->
+
 # IMT - PII de Front End - Matemática no Metrô
 
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Metr%C3%B4-SP_logo.svg/2560px-Metr%C3%B4-SP_logo.svg.png" alt="Logo do Metrô" style="border-radius: 50%;">
+
+
   <h3>Repositório do grupo de PII em Front End</h3>
   <p>2° Semestre dos cursos de TI do Instituto Mauá de Técnologia</p>
 </div>
 
----
-
-<p>Projeto Integrador Interdisciplinar, com objetivo de realizar o Front End para o "Matemática no Metrô", projeto realizado pelo Instituto de Engenharia e pelo Metr, com apoio do Instituto Mauá de Tecnologia.</p>
-
----
-
-## Sobre o projeto Matemática no Metrô
-<p></p>
+<p>Projeto Integrador Interdisciplinar, com objetivo de realizar o Front End para o "Matemática no Metrô", projeto realizado pelo Instituto de Engenharia e pelo Metrô de São Paulo, com apoio do Instituto Mauá de Tecnologia.</p>
 
 ---
 
@@ -52,9 +49,19 @@
 
 ---
 
+## Sobre o projeto Matemática no Metrô
+
+
+
+---
+
 ## 🔧 Funções:
 
 - **Função 1**: Descrever
 - **Função 2**: Descrever
 - **Função 3**: Descrever
 - **Função 4**: Descrever
+
+
+---
+
