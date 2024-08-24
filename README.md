@@ -64,4 +64,14 @@
 
 
 ---
+---
+
+| Realização:                                  | Apoio:                                     |
+|----------------------------------------------|--------------------------------------------|
+| <img src="images/logo-inst-eng.png" width="150"> <img src="images/logo-metro1.png" width="150"> | <img src="images/logo-imt.png" width="150"> |
+
+
+
+
+
 
