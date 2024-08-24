@@ -10,7 +10,7 @@
   <p>2° Semestre dos cursos de TI do Instituto Mauá de Técnologia</p>
 </div>
 
-<p>Projeto Integrador Interdisciplinar, com objetivo de realizar o Front End para o "Matemática no Metrô", projeto realizado pelo Instituto de Engenharia e pelo Metrô de São Paulo, com apoio do Instituto Mauá de Tecnologia.</p>
+<p>Projeto Integrador Interdisciplinar, com objetivo de realizar o Front End de um website para o "Matemática no Metrô", projeto realizado pelo Instituto de Engenharia e pelo Metrô de São Paulo, com apoio do Instituto Mauá de Tecnologia.</p>
 
 ---
 
@@ -49,12 +49,6 @@
 
 ---
 
-## Sobre o projeto Matemática no Metrô
-
-
-
----
-
 ## 🔧 Funções:
 
 - **Função 1**: Descrever
@@ -64,7 +58,10 @@
 
 
 ---
----
+
+## Sobre o projeto Matemática no Metrô:
+
+
 
 | Realização:                                  | Apoio:                                     |
 |----------------------------------------------|--------------------------------------------|
