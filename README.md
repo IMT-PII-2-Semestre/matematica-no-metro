@@ -1,5 +1,3 @@
-<!-- Henrique Impastaro -->
-
 # IMT - PII de Front End - Matemática no Metrô
 
 <div align="center">
@@ -51,27 +49,10 @@
 
 ## 🔧 Funções:
 
-- **Função 1**: Descrever
-- **Função 2**: Descrever
-- **Função 3**: Descrever
-- **Função 4**: Descrever
-
-
 ---
 
 ## Sobre o projeto Matemática no Metrô:
 
-
-
 | Realização:                                  | Apoio:                                     |
 |----------------------------------------------|--------------------------------------------|
 | <img src="images/logo-inst-eng.png" width="150"> <img src="images/logo-metro1.png" width="160"> | <img src="images/logo-imt.png" width="150"> |
-
-
-
-
-
-
-
-
-
