@@ -8,14 +8,14 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 20px;
-  background-color: #f4f4f4;
+  padding: 30px;
+  background-color: #f9fafc;
 }
 
 header {
   background: #333;
-  color: #fff;
-  padding: 10px 0;
+  color: #1b2ccc;
+  padding: 15px 0;
   text-align: center;
 }
 
