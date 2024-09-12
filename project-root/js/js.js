@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
 
-    alert(`Obrigado, ${name}! Entraremos em contato pelo email ${email}.`);
+    alert(`Obrigado, ${name}! Entraemos em contato pelo email ${email}.`);
 
     form.reset();
   });

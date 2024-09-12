@@ -51,3 +51,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+h1 {
+  color:lab(from color l a b)
+}
