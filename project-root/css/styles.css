@@ -50,5 +50,27 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.logo-inst-eng{
+  position: absolute;
+  width: 200px;
+  left: 20px;
+  bottom: 20px;
+}
+
+.logo-metro1{
+  position: absolute;
+  width: 200px;
+  right: 20px;
+  bottom: 20px;
+}
+
+.logo-imt-branco{
+  position: absolute;
+  width: 150px;
+  bottom: 20px;
 }
 
