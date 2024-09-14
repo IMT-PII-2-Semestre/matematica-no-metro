@@ -8,13 +8,12 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  padding: 30px;
   background-color: #f9fafc;
 }
 
 header {
   background: #0A2891;
-  color: #30a2e4;
+  color: #e4e4e4;
   padding: 15px 0;
   text-align: center;
 }
@@ -51,7 +50,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 150px;
-  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .logo-inst-eng{
@@ -72,5 +72,11 @@ footer {
   position: absolute;
   width: 150px;
   bottom: 20px;
+}
+
+.logo-matematica-no-metro{
+  width: 120px;
+  height: 110px;
+  border-radius: 10px;
 }
 
