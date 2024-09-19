@@ -47,9 +47,28 @@
 
 ---
 
-## 🔧 Funções:
+## 🔧 Funcionalidades:
+
+- Consultar horários: Verifique os horários das aulas de matemática oferecidas em diferentes estações de metrô.
+- Localização da estação: Encontre a localização exata da estação do metrô onde a aula é ministradas.
+- Feedback dos alunos: Envie feedback e sugestões sobre as aulas diretamente pelo site.
 
 ---
+
+## Tecnologias utilizadas:
+
+- **Front-End**: HTML, CSS, JavaScript e Bootstrap.
+
+---
+
+## Instalação: 
+Para rodar o o projeto localmente:
+
+- Clone o reposítorio:
+ ```bash
+  git clone https://github.com/IMT-PII-2-Semestre/matematica-no-metro.git
+```
+
 
 ## Sobre o projeto Matemática no Metrô:
 
