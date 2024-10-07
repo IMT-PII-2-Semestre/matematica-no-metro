@@ -1,68 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matemática no Metrô</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+  crossorigin="anonymous"
+/>
 </head>
 <body>
-    <header class="header">
-        <img class="logo-matematica-no-metro2" src="" alt="logo-matematica-no-metro2">
-        <nav>
-            <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+ 
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+      <div class="container-fluid">
+        <!-- Logotipo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="/matematica-no-metro/images/logo-matematica.png"
+            alt="Logotipo Matemática no Metrô"
+            class="logo-matematica-no-metro2"
+            style="height: 50px;" 
+          />
+        </a>
+        
+        <!-- Botão do Navbar Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Alternar navegação"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav d-flex gap-4">
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary text-white" href="#about">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary text-white" href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+           <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active  btn btn-warning text-black px-3" href="#volunteer">Seja um Voluntário</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main>
-        <section id="home" class="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="3000">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="/images/amigos-do-espaco-para-copia-alinhados-com-fones-de-ouvido.jpg" class="d-block w-100" alt="imagemTeste">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/images/amigos-do-espaco-para-copia-alinhados-com-fones-de-ouvido.jpg" class="d-block w-100" alt="imagemTeste">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/images/amigos-do-espaco-para-copia-alinhados-com-fones-de-ouvido.jpg" class="d-block w-100" alt="imagemTeste">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+      <section id="home" class="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/matematica-no-metro/images/amigos-do-espaco-para-copia-alinhados-com-fones-de-ouvido.jpg"
+                class="d-block w-100"
+                alt="imagemTeste"
+              />
             </div>
-        </section>
-        <div class="card" style="width: 18rem;">
-          <img src="" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Se voluntarie-se para dar aulas</h5>
-            <p class="card-text">.</p>
-            <a href="#" class="btn btn-primary">Se voluntarie-se para dar aulas de matematica no metro</a>
+            <div class="carousel-item">
+              <img
+                src="/matematica-no-metro/images/amigos-do-espaco-para-copia-alinhados-com-fones-de-ouvido.jpg"
+                class="d-block w-100"
+                alt="imagemTeste"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/matematica-no-metro/images/amigos-do-espaco-para-copia-alinhados-com-fones-de-ouvido.jpg"
+                class="d-block w-100"
+                alt="imagemTeste"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section id="about" class="py-5 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="mb-4">Sobre Nós</h2>
+              <p class="lead">
+                O projeto "Matemática no Metrô" nasceu com a ideia de levar o conhecimento matemático a todos. Nossa missão é
+                oferecer aulas gratuitas de matemática em espaços públicos, como estações de metrô, tornando a educação acessível
+                e interativa para toda a comunidade. Acreditamos que a matemática pode ser aprendida de maneira prática e
+                divertida, e queremos compartilhar essa experiência com todos os passageiros.
+              </p>
+            </div>
           </div>
         </div>
+      </section>
+      <section id="location" class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h2 class="mb-4">Onde Estamos Localizados</h2>
+              <p class="lead">
+                Atualmente, nossas aulas estão sendo ministradas no metro do sacomã. Você pode nos encontrar
+                 sempre aos finais de semana e feriados. Para saber mais
+                sobre os horários e locais específicos, fique atento às nossas redes sociais ou entre em contato conosco!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/matematica-no-metro/images/logo-imt.png" class="card-img-top" alt="maua" />
+              <div class="card-body">
+                <h5 class="card-title">Se voluntarie-se para dar aulas</h5>
+                <p class="card-text">Faça parte do nosso projeto, ajude a levar conhecimento para toda a cidade.</p>
+                <a href="#" class="btn btn-primary">Seja um voluntário</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="/matematica-no-metro/images/logo-imt.png" class="card-img-top" alt="maua" />
+              <div class="card-body">
+                <h5 class="card-title">Se voluntarie-se para dar aulas</h5>
+                <p class="card-text">Contribua com nosso projeto e ajude a transformar vidas através da educação.</p>
+                <a href="#" class="btn btn-primary">Seja um voluntário</a>
+              </div>
+            </div>
+          </div>
+          <!-- Adicione mais colunas conforme necessário -->
+        </div>
+      </div>
     </main>
-    <footer class="footer">
-        <img class="logo-imt-branco" src="/images/logo-imt-branco.JPG" alt="logo-imt-branco">
-        <img class="logo-metro1" src="/images/logo-metro1.png" alt="logo-metro1">
-        <img class="logo-inst-eng" src="/images/logo-inst-eng.png" alt="logo-inst-eng">
-        <p>&copy; 2024 Matemática no Metro. Todos os direitos reservados.</p>
+    <footer class="footer mt-auto">
+      <img
+        class="logo-imt-branco"
+        src="/matematica-no-metro/images/logo-imt-braco.png"
+        alt="logo-imt-branco"
+      />
+      <img
+        class="logo-metro1"
+        src="/matematica-no-metro/images/logo-metro1.png"
+        alt="logo-metro1"
+      />
+      <img
+        class="logo-inst-eng"
+        src="/matematica-no-metro/images/logo-inst-eng.png"
+        alt="logo-inst-eng"
+      />
+      <p class="mt-3">&copy; 2024 Matemática no Metro. Todos os direitos reservados.</p>
     </footer>
     <script src="../js/js.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
