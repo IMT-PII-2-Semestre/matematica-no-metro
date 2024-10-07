@@ -9,6 +9,8 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #46b910;
+  height: 100%; 
+  margin: 0; 
 }
 
 header {
@@ -35,6 +37,10 @@ nav ul li a {
 
 main {
   margin-top: 20px;
+  flex: 1; 
+  padding: 20px; 
+  overflow-y: auto;
+  
 }
 
 section {
@@ -45,13 +51,15 @@ footer {
   background: #122d8f;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  z-index: 2;
 }
 
 .logo-inst-eng{
@@ -78,5 +86,12 @@ footer {
   height: 150px;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  header img {
+      width: 100%; 
+  }
+}
 
-
+.carousel {
+  z-index: 1;
+}
