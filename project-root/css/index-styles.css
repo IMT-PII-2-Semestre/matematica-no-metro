@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #46b910;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #122d8f;
+  color: #e4e4e4;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffdd00; 
+}
+
+.navbar-custom {
+  background-color: #004080;
+}
+
+
+
+main {
+  margin-top: 20px;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #122d8f;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.logo-inst-eng {
+  position: absolute;
+  width: 200px;
+  left: 20px;
+  bottom: 80px;
+}
+
+.logo-metro1 {
+  position: absolute;
+  width: 200px;
+  right: 20px;
+  bottom: 80px;
+}
+
+.logo-imt-branco {
+  width: 150px;
+}
+
+.logo-matematica-no-metro2 {
+ max-height: 50px; 
+  width: auto; 
+  display: block; 
+}
+@media (max-width: 768px) {
+  header img {
+    width: 100%;
+  }
+}
+
+.carousel {
+  z-index: 1;
+  height: 500px;
+}
+
+.carousel-inner {
+  height: 100%; 
+}
+
+.carousel-item {
+  height: 100%; 
+}
+
+.carousel-item img {
+  height: 100%; 
+  object-fit: cover;
+}
+
+textarea.form-control {
+  width: 100%; 
+  max-width: 100%;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  font-size: 16px; 
+  resize: vertical; 
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px; 
+  object-fit: cover; 
+}
