@@ -30,7 +30,7 @@ body {
     background: #122d8f;
     color: #fff;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 150px;
@@ -96,4 +96,13 @@ body {
   content: '>'; 
   color: #1a6fb9; 
   padding: 0 8px; 
+}
+
+.scrollable-form {
+  max-height: 500px; /* Altura máxima do contêiner */
+  overflow-y: auto;  /* Ativar rolagem vertical */
+  padding: 20px;     /* Padding interno para o formulário não ficar colado às bordas */
+  border: 1px solid #ddd; /* Adiciona uma borda leve */
+  border-radius: 5px; /* Bordas arredondadas */
+  background-color: #ffffff; /* Fundo branco para contraste com a página */
 }
