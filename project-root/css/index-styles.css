@@ -14,20 +14,30 @@ header {
   padding: 15px 0;
   text-align: center;
 }
-
 .nav-link {
   transition: color 0.3s ease-in-out;
 }
-
-.nav-link:hover {
-  color: #ffdd00; 
-}
-
 .navbar-custom {
   background-color: #004080;
 }
-
-
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-nav {
+  text-align: center;
+}
+.navbar-nav .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar-toggler {
+  margin-left: auto;
+}
 
 main {
   margin-top: 20px;
