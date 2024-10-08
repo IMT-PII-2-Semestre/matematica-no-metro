@@ -39,6 +39,7 @@ header {
   margin-left: auto;
 }
 
+
 main {
   margin-top: 20px;
   flex: 1;
@@ -126,4 +127,25 @@ textarea.form-control {
 .card-img-top {
   height: 200px; 
   object-fit: cover; 
+}
+
+#feedback {
+  background-color: #f8f9fa;
+}
+
+#feedback h2 {
+  color: #122d8f;
+}
+
+#feedback p {
+  color: #555;
+}
+
+#feedback button {
+  background-color: #122d8f;
+  border: none;
+}
+
+#feedback button:hover {
+  background-color: #0f236e;
 }
