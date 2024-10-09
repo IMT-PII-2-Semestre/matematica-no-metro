@@ -67,20 +67,18 @@ footer {
 }
 
 .logo-inst-eng {
-  position: absolute;
   width: 200px;
   left: 20px;
   bottom: 80px;
 }
 
 .logo-metro1 {
-  position: absolute;
   width: 200px;
   right: 20px;
   bottom: 80px;
 }
 
-.logo-imt-branco {
+.logo-imt {
   width: 150px;
 }
 
