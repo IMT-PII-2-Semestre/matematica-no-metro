@@ -8,3 +8,4 @@ document.querySelector('form').addEventListener('submit', function(event) {
   ? new bootstrap.Modal(document.getElementById('senhaModal')).show()
   : alert('Formulário enviado com sucesso!');
 });
+
