@@ -1,0 +1,15 @@
+{
+  "name": "matematica-no-metro",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Metr%C3%B4-SP_logo.svg/2560px-Metr%C3%B4-SP_logo.svg.png\" alt=\"Logo do Metrô\" style=\"border-radius: 50%;\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
