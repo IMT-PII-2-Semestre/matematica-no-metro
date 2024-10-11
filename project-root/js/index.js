@@ -11,9 +11,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.querySelectorAll('a[href="#volunteer"]').forEach(button => {
   button.addEventListener('click', function (e) {
     e.preventDefault();
-    window.location.href = 'voluntario.html'; 
+    window.location.href = '../html/voluntario.html'; 
   });
 });
+
+document.querySelectorAll('a[href="#terms"]').forEach(button => {
+  button.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.location.href = '../html/termos-de-uso.html'; 
+  });
+});
+
 
 document.querySelector('#feedback form').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -29,6 +37,7 @@ document.querySelector('#feedback form').addEventListener('submit', function(e) 
     alert('Por favor, preencha todos os campos.');
   }
 });
+
 
 
 
