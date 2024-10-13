@@ -13,6 +13,10 @@ body {
     font-family: 'Roboto Serif', serif;
     font-weight: 700; /* Negrito para cabeçalhos */
 }
+p, a{
+  font-family: 'Roboto Serif', serif;
+ 
+}
   
   header {
     background: #122d8f;

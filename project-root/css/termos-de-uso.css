@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+  font-family: 'Roboto Serif', serif;
     line-height: 1.6;
     background-color: #46b910;
     height: 100%;
@@ -7,7 +7,17 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700; /* Negrito para cabeçalhos */
+}
+
+p, a{
+  font-family: 'Roboto Serif', serif;
+ 
+}
+
   header {
     background: #122d8f;
     color: #e4e4e4;
