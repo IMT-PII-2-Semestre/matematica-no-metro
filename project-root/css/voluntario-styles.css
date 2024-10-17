@@ -73,6 +73,16 @@ p, a{
     text-align: center;
     z-index: 2;
   }
+
+  .nav-link.btn-custom {
+    background-color: #122d8f; /* Cor de fundo igual ao cabeçalho */
+    color: white; /* Cor do texto */
+  }
+  
+  /* Estilo quando o mouse passa sobre o botão */
+  .nav-link.btn-custom:hover {
+    background-color: #006adc; /* Cor quando passar o mouse (altere conforme necessário) */
+  }
   
   .logo-inst-eng {
     width: 200px;
