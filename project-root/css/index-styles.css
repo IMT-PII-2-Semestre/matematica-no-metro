@@ -48,6 +48,18 @@ header {
   margin-left: auto;
 }
 
+.seja-um-voluntario {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* ajuste conforme necessário para o alinhamento horizontal */
+  transform: translateY(-50%);
+  background-color: yellow; /* Apenas para melhor visualização */
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+
 
 main {
   margin-top: 20px;
@@ -92,9 +104,15 @@ footer {
 }
 
 .logo-matematica-no-metro2 {
- max-height: 50px; 
+  max-height: 50px; 
   width: auto; 
-  display: block; 
+  display: block;
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  left: 20px; /* ajuste conforme necessário para o alinhamento horizontal */
+  transform: translateY(-50%);
+  
 }
 @media (max-width: 768px) {
   header img {
