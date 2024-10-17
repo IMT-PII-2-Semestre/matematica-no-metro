@@ -6,15 +6,14 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 3000;
 
-// Conectar ao MongoDB
-mongoose.connect('mongodb://localhost:27017/nome-banco', {
+// Conectar ao MongoDB Atlas
+mongoose.connect('mongodb+srv://matMetro:mauaGamers@matematica-metro.hecz7.mongodb.net/?retryWrites=true&w=majority&appName=matematica-metro', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
-.then(() => console.log('Conectado ao MongoDB'))
+.then(() => console.log('Conectado ao MongoDB Atlas'))
 .catch((err) => console.error('Erro ao conectar ao MongoDB:', err));
 
-// Definir o esquema do Feedback
 const FeedbackSchema = new mongoose.Schema({
     nome: {
         type: String,
@@ -30,23 +29,18 @@ const FeedbackSchema = new mongoose.Schema({
     },
 });
 
-// Criar o modelo do Feedback
 const Feedback = mongoose.model('Feedback', FeedbackSchema);
 
-// Middleware para formulários e JSON
-app.use(express.urlencoded({ extended: true })); // Para requisições de formulário
-app.use(express.json()); // Para requisições com corpo em JSON
+app.use(express.urlencoded({ extended: true })); 
+app.use(express.json()); 
 
-// Servir arquivos estáticos
 app.use(express.static(path.join(__dirname, '../project-root')));
 app.use('/images', express.static(path.join(__dirname, '../images')));
 
-// Rota principal
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../project-root/html/index.html'));
 });
 
-// Rota dinâmica para páginas HTML
 app.get('/html/:page', (req, res) => {
   let page = req.params.page;
 
@@ -63,24 +57,20 @@ app.get('/html/:page', (req, res) => {
   });
 });
 
-// Rota para receber feedbacks
 app.post('/feedback', async (req, res) => {
   const { nome, email, mensagem } = req.body;
 
-  // Verificar se todos os campos estão preenchidos
   if (!nome || !email || !mensagem) {
     return res.status(400).send({ message: 'Todos os campos são obrigatórios.' });
   }
 
   try {
-    // Criar um novo documento de feedback
     const novoFeedback = new Feedback({
       nome,
       email,
       mensagem
     });
 
-    // Salvar no banco de dados
     await novoFeedback.save();
 
     res.status(200).send({ message: 'Feedback recebido com sucesso!' });
@@ -90,7 +80,6 @@ app.post('/feedback', async (req, res) => {
   }
 });
 
-// Iniciar o servidor
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
