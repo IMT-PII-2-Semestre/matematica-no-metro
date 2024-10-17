@@ -143,18 +143,45 @@
             <input type="tel" class="form-control" id="telefone" placeholder="(11) 00000-0000">
           </div>
           
-    
           <div class="mb-3">
-            <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+            <label for="Qual curso faz você faz parte?" class="form-label">Qual curso você faz parte?</label>
+            <input type="" class="form-control" id="curso" placeholder="Ex: Engenharia...">
           </div>
+
+          <div class="mb-3">
+            <label for="dob" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" id="dob" aria-describedby="dobHelp">
           
-     
-          <div class="mb-3">
-            <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
-            <input type="password" class="form-control" id="confirmarSenha" placeholder="Confirme sua senha" required>
-          </div>
-  
+        </div>
+
+        <div class="mb-3">
+          <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico</label>
+          <select class="form-select" id="mathLevel" aria-label="Nível de Conhecimento Matemático">
+              <option selected>Escolha seu nível</option>
+              <option value="1">Básico</option>
+              <option value="2">Intermediário</option>
+              <option value="3">Avançado</option>
+          </select>
+      </div>
+      
+      <div class="mb-3">
+        <label class="form-label">Disponibilidade de Horários</label>
+        <div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="morning" value="morning">
+                <label class="form-check-label" for="morning">Manhã (das 8h às 11h)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="afternoon" value="afternoon">
+                <label class="form-check-label" for="afternoon">Tarde (das 12h às 16h)</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="evening" value="evening">
+                <label class="form-check-label" for="evening">Noite (das 17h às 20h)</label>
+            </div>
+        </div>
+    </div>
+
           <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
         </form>
         <div class="modal fade" id="senhaModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
