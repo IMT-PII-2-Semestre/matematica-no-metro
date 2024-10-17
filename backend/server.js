@@ -14,22 +14,26 @@ mongoose.connect('mongodb+srv://matMetro:mauaGamers@matematica-metro.hecz7.mongo
 .then(() => console.log('Conectado ao MongoDB Atlas'))
 .catch((err) => console.error('Erro ao conectar ao MongoDB:', err));
 
+// Definir Schemas
 const FeedbackSchema = new mongoose.Schema({
-    nome: {
-        type: String,
-        required: true
-    },
-    email: {
-        type: String,
-        required: true
-    },
-    mensagem: {
-        type: String,
-        required: true
-    },
+    nome: { type: String, required: true },
+    email: { type: String, required: true },
+    mensagem: { type: String, required: true }
 });
 
+const UserSchema = new mongoose.Schema({
+    nome: { type: String, required: true },
+    email: { type: String, required: true },
+    telefone: { type: String },
+    curso: { type: String },
+    dataNascimento: { type: String },
+    nivelConhecimento: { type: String },
+    disponibilidade: { type: [String] }
+});
+
+// Definir Models
 const Feedback = mongoose.model('Feedback', FeedbackSchema);
+const User = mongoose.model('User', UserSchema);
 
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json()); 
@@ -43,7 +47,6 @@ app.get('/', (req, res) => {
 
 app.get('/html/:page', (req, res) => {
   let page = req.params.page;
-
   let filePath = path.join(__dirname, `../project-root/html/${page}`);
   if (!filePath.endsWith('.html')) {
     filePath += '.html';
@@ -65,18 +68,43 @@ app.post('/feedback', async (req, res) => {
   }
 
   try {
-    const novoFeedback = new Feedback({
-      nome,
-      email,
-      mensagem
-    });
-
+    const novoFeedback = new Feedback({ nome, email, mensagem });
     await novoFeedback.save();
-
     res.status(200).send({ message: 'Feedback recebido com sucesso!' });
   } catch (error) {
     console.error('Erro ao salvar feedback:', error);
     res.status(500).send({ message: 'Erro ao salvar feedback.' });
+  }
+});
+
+// Corrigir a Rota de Cadastro de Usuário
+app.post('/cadastrar', async (req, res) => {
+  const { nome, email, telefone, curso, dataNascimento, nivelConhecimento, disponibilidade } = req.body;
+
+  // Verificar Campos Obrigatórios
+  if (!nome || !email) {
+    return res.status(400).send({ message: 'Nome e email são obrigatórios.' });
+  }
+
+  try {
+    // Garantir que disponibilidade seja sempre um array
+    const disponibilidadeArray = Array.isArray(disponibilidade) ? disponibilidade : (disponibilidade ? [disponibilidade] : []);
+
+    const novoUsuario = new User({
+      nome,
+      email,
+      telefone,
+      curso,
+      dataNascimento,
+      nivelConhecimento,
+      disponibilidade: disponibilidadeArray
+    });
+
+    await novoUsuario.save();
+    res.status(200).send({ message: 'Usuário cadastrado com sucesso!' });
+  } catch (error) {
+    console.error('Erro ao salvar usuário:', error);
+    res.status(500).send({ message: 'Erro ao salvar usuário.' });
   }
 });
 

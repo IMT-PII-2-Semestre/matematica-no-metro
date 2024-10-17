@@ -125,85 +125,64 @@
       <div class="col-md-6">
         <h2 class="text-center mb-4">Cadastro de Usuário</h2>
         <div class="scrollable-form">
-        <form>
-          <div class="mb-3">
-            <label for="nome" class="form-label">Nome Completo</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" required>
-          </div>
-          
-         
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com" required>
-          </div>
-          
-       
-          <div class="mb-3">
-            <label for="telefone" class="form-label">Telefone</label>
-            <input type="tel" class="form-control" id="telefone" placeholder="(11) 00000-0000">
-          </div>
-          
-          <div class="mb-3">
-            <label for="Qual curso faz você faz parte?" class="form-label">Qual curso você faz parte?</label>
-            <input type="" class="form-control" id="curso" placeholder="Ex: Engenharia...">
-          </div>
-
-          <div class="mb-3">
-            <label for="dob" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="dob" aria-describedby="dobHelp">
-          
-        </div>
-
-        <div class="mb-3">
-          <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico</label>
-          <select class="form-select" id="mathLevel" aria-label="Nível de Conhecimento Matemático">
-              <option selected>Escolha seu nível</option>
-              <option value="1">Básico</option>
-              <option value="2">Intermediário</option>
-              <option value="3">Avançado</option>
-          </select>
-      </div>
-      
-      <div class="mb-3">
-        <label class="form-label">Disponibilidade de Horários</label>
-        <div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="morning" value="morning">
-                <label class="form-check-label" for="morning">Manhã (das 8h às 11h)</label>
+          <form method="POST" action="/cadastrar" id="userForm">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo" required>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="afternoon" value="afternoon">
-                <label class="form-check-label" for="afternoon">Tarde (das 12h às 16h)</label>
+        
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@exemplo.com" required>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="evening" value="evening">
-                <label class="form-check-label" for="evening">Noite (das 17h às 20h)</label>
+        
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(11) 00000-0000">
             </div>
-        </div>
-    </div>
-
-          <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+        
+            <div class="mb-3">
+                <label for="curso" class="form-label">Qual curso você faz parte?</label>
+                <input type="text" class="form-control" name="curso" id="curso" placeholder="Ex: Engenharia...">
+            </div>
+        
+            <div class="mb-3">
+                <label for="dob" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" name="dataNascimento" id="dob">
+            </div>
+        
+            <div class="mb-3">
+                <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico</label>
+                <select class="form-select" name="nivelConhecimento" id="mathLevel">
+                    <option value="" disabled selected>Escolha seu nível</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermediário">Intermediário</option>
+                    <option value="Avançado">Avançado</option>
+                </select>
+            </div>
+        
+            <div class="mb-3">
+                <label class="form-label">Disponibilidade de Horários</label>
+                <div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="disponibilidade" value="morning" id="morning">
+                        <label class="form-check-label" for="morning">Manhã (das 8h às 11h)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="disponibilidade" value="afternoon" id="afternoon">
+                        <label class="form-check-label" for="afternoon">Tarde (das 12h às 16h)</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="disponibilidade" value="evening" id="evening">
+                        <label class="form-check-label" for="evening">Noite (das 17h às 20h)</label>
+                    </div>
+                </div>
+            </div>
+        
+            <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
         </form>
-        <div class="modal fade" id="senhaModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Erro</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                As senhas não coincidem. Por favor, verifique novamente.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
-              </div>
-            </div>
-          </div>
+        
         </div>
-        </div>
-      </div>
-    </div>
-  </div>
   <footer class="text-center text-lg-start text-muted" style="background-color: white;">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <div class="me-5 d-none d-lg-block">
@@ -287,11 +266,53 @@
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Matemática no Metrô</a>
     </div>
   </footer>
-  <script src="../js/voluntario.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('#userForm').addEventListener('submit', async (event) => {
+            event.preventDefault(); // Impede o recarregamento da página
+
+            // Coletar os dados do formulário
+            const formData = new FormData(event.target);
+
+            const data = {
+                nome: formData.get('nome') || '',
+                email: formData.get('email') || '',
+                telefone: formData.get('telefone') || '',
+                curso: formData.get('curso') || '',
+                dataNascimento: formData.get('dataNascimento') || '',
+                nivelConhecimento: formData.get('nivelConhecimento') || '',
+                disponibilidade: formData.getAll('disponibilidade') || [] // Certifique-se de que seja um array
+            };
+
+            try {
+                const response = await fetch('/cadastrar', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    alert(result.message);
+                } else {
+                    const error = await response.json();
+                    alert(`Erro: ${error.message}`);
+                }
+            } catch (err) {
+                console.error('Erro ao enviar os dados:', err);
+                alert('Erro ao enviar os dados, tente novamente mais tarde.');
+            }
+        });
+    });
+</script>
 </body>
 </html>
