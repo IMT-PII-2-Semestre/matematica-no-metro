@@ -22,8 +22,8 @@ const FeedbackSchema = new mongoose.Schema({
 });
 
 const UserSchema = new mongoose.Schema({
-    nome: { type: String, required: true },
-    email: { type: String, required: true },
+    nome: { type: String },
+    email: { type: String },
     telefone: { type: String },
     curso: { type: String },
     dataNascimento: { type: String },
@@ -38,13 +38,25 @@ const User = mongoose.model('User', UserSchema);
 app.use(express.urlencoded({ extended: true })); 
 app.use(express.json()); 
 
+// Configurar caminhos estáticos para servir arquivos como HTML, CSS, JavaScript e imagens
 app.use(express.static(path.join(__dirname, '../project-root')));
-app.use('/images', express.static(path.join(__dirname, '../images')));
+app.use('/images', express.static(path.join(__dirname, '..', 'images')));
 
+// Rotas Específicas
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../project-root/html/index.html'));
 });
 
+app.get('/admin', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'project-root', 'html', 'admin.html'), (err) => {
+    if (err) {
+      console.error(err);
+      res.status(404).send('Página de administração não encontrada');
+    }
+  });
+});
+
+// Rota genérica para outras páginas HTML
 app.get('/html/:page', (req, res) => {
   let page = req.params.page;
   let filePath = path.join(__dirname, `../project-root/html/${page}`);
@@ -60,6 +72,7 @@ app.get('/html/:page', (req, res) => {
   });
 });
 
+// Rota para feedback
 app.post('/feedback', async (req, res) => {
   const { nome, email, mensagem } = req.body;
 
@@ -81,13 +94,11 @@ app.post('/feedback', async (req, res) => {
 app.post('/cadastrar', async (req, res) => {
   const { nome, email, telefone, curso, dataNascimento, nivelConhecimento, disponibilidade } = req.body;
 
-  // Verificar Campos Obrigatórios
   if (!nome || !email) {
     return res.status(400).send({ message: 'Nome e email são obrigatórios.' });
   }
 
   try {
-    // Garantir que disponibilidade seja sempre um array
     const disponibilidadeArray = Array.isArray(disponibilidade) ? disponibilidade : (disponibilidade ? [disponibilidade] : []);
 
     const novoUsuario = new User({

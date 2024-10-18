@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto Serif', serif;
+    line-height: 1.6;
+    background-color: #e4e4e4;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 700; /* Negrito para cabeçalhos */
+  }
+  p, a {
+    font-family: 'Roboto Serif', serif;
+   
+  }
+  
+  header {
+    background: #122d8f;
+    color: #e4e4e4;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .nav-link {
+    transition: color 0.3s ease-in-out;
+  }
+  .navbar-custom {
+    background-color: #004080;
+  }
+  .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar-toggler {
+    margin-left: auto;
+  }
