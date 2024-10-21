@@ -1,50 +1,171 @@
 /* Estilos gerais */
 body {
-    font-family: 'Roboto Serif', serif;
-    line-height: 1.6;
-    background-color: #e4e4e4;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+  font-family: 'Roboto Serif', serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 700;
+}
+
+p, a {
+  font-family: 'Roboto Serif', serif;
+}
+
+/* Cabeçalho */
+header {
+  background: #122d8f;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Navbar */
+.nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom {
+  background-color: #004080;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+/* Container principal da página de administração */
+.container.admin-container {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+/* Estilo dos cartões */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #004080;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-text {
+  margin: 5px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Grid de colunas para exibir 2 cartões por linha */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.row-cols-1 .col,
+.row.row-cols-md-2 .col {
+  display: flex;
+}
+
+.col {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .row.row-cols-md-2 .col {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Serif', serif;
-    font-weight: 700; /* Negrito para cabeçalhos */
+}
+
+@media (min-width: 992px) {
+  .row.row-cols-md-2 .col {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
-  p, a {
-    font-family: 'Roboto Serif', serif;
-   
-  }
-  
-  header {
-    background: #122d8f;
-    color: #e4e4e4;
-    padding: 15px 0;
-    text-align: center;
-  }
-  .nav-link {
-    transition: color 0.3s ease-in-out;
-  }
-  .navbar-custom {
-    background-color: #004080;
-  }
-  .container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .navbar-collapse {
-    flex-grow: 0;
-  }
-  .navbar-nav {
-    text-align: center;
-  }
-  .navbar-nav .nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .navbar-toggler {
-    margin-left: auto;
-  }
+}
+
+/* Rodapé */
+footer {
+  margin-top: auto;
+  background: #122d8f;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.breadcrumb {
+  background-color: #f8f9fa; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  margin-top: 20px; 
+  margin-left: 20px;
+}
+
+.breadcrumb-item a {
+  color: #007bff; 
+  text-decoration: none; 
+  font-weight: 300; 
+  transition: color 0.3s ease; 
+}
+
+.breadcrumb-item a:hover {
+  color: #0056b3; 
+}
+
+.breadcrumb-item.active {
+  color: #137cd8; 
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '/'; 
+  color: #1c5b92; 
+  padding: 0 8px; 
+}

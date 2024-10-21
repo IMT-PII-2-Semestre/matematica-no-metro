@@ -38,16 +38,9 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav d-flex gap-3">
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-custom text-white" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-custom text-white" href="...">Botão 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-custom text-white" href="...">Botão 2</a>
-                        </li>
-                    </ul>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="/">Home</a>
+                      </li>
                 </div>
                 <a class="navbar-brand">
                     <img
@@ -60,44 +53,34 @@
             </div>
         </nav>
     </header>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Administrador</li>
+      </ol>
+    </nav>
     
-    <div class="container admin-container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title">Gerenciar Voluntários</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Adicione, edite ou remova voluntários do projeto.</p>
-                        <a href="#" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title">Gerenciar Eventos</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Gerencie os eventos de aulas e outras atividades do projeto.</p>
-                        <a href="#" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        <h5 class="card-title">Feedback dos Usuários</h5>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Visualize e responda aos feedbacks enviados pelos participantes.</p>
-                        <a href="#" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="container admin-container mt-4">
+  <div class="row">
+      <!-- Seção de Usuários -->
+      <div class="col-md-6 d-flex flex-column mb-4" style="border: 1px solid #ccc; padding: 15px; background-color: #f9f9f9;">
+          <h2 class="text-center">Usuários</h2>
+          <div class="row row-cols-1 row-cols-md-1 g-3" id="users-container">
+             
+          </div>
+      </div>
+
+      <!-- Seção de Feedbacks -->
+      <div class="col-md-6 d-flex flex-column mb-4" style="border: 1px solid #ccc; padding: 15px; background-color: #f9f9f9;">
+          <h2 class="text-center">Feedbacks</h2>
+          <div class="row row-cols-1 row-cols-md-1 g-3" id="feedbacks-container">
+              
+          </div>
+      </div>
+  </div>
+</div>
+
     <footer class="text-center text-lg-start text-muted" style="background-color: white;">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <div class="me-5 d-none d-lg-block">

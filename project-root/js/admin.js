@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
             users.forEach(user => {
                 const userCard = document.createElement('div');
-                userCard.classList.add('col-md-12', 'mb-3');
+                userCard.classList.add('col'); // Define uma coluna responsiva
 
                 userCard.innerHTML = `
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-header bg-primary text-white">
-                            <h5 class="card-title mb-0">Informações sobre o voluntario</h5>
+                            <h5 class="card-title mb-0">Informações sobre o Voluntário</h5>
                         </div>
                         <div class="card-body">
-                        <p class="card-text"><strong>Nome:</strong> ${user.nome}</p>
+                            <p class="card-text"><strong>Nome:</strong> ${user.nome}</p>
                             <p class="card-text"><strong>Email:</strong> ${user.email}</p>
                             <p class="card-text"><strong>Telefone:</strong> ${user.telefone || 'N/A'}</p>
                             <p class="card-text"><strong>Curso:</strong> ${user.curso || 'N/A'}</p>
                             <p class="card-text"><strong>Data de Nascimento:</strong> ${user.dataNascimento || 'N/A'}</p>
-                            <p class="card-text"><strong>Nivel de Conhecimento:</strong> ${user.nivelConhecimento || 'N/A'}</p>
+                            <p class="card-text"><strong>Nível de Conhecimento:</strong> ${user.nivelConhecimento || 'N/A'}</p>
                             <p class="card-text"><strong>Disponibilidade:</strong> ${user.disponibilidade || 'N/A'}</p>
                         </div>
                     </div>
@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             feedbacks.forEach(feedback => {
                 const feedbackCard = document.createElement('div');
-                feedbackCard.classList.add('col-md-12', 'mb-3');
+                feedbackCard.classList.add('col'); // Define uma coluna responsiva
 
                 feedbackCard.innerHTML = `
-                    <div class="card">
+                    <div class="card h-100">
                         <div class="card-header bg-success text-white">
                             <h5 class="card-title mb-0">${feedback.nome}</h5>
                         </div>
