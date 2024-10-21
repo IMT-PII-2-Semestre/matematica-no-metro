@@ -119,6 +119,30 @@ app.post('/cadastrar', async (req, res) => {
   }
 });
 
+
+app.get('/api/users', async (req, res) => {
+  try {
+    const users = await User.find(); // Busca todos os usuários
+    res.json(users); // Retorna os dados dos usuários em formato JSON
+  } catch (error) {
+    console.error('Erro ao buscar usuários:', error);
+    res.status(500).send({ message: 'Erro ao buscar usuários.' });
+  }
+});
+
+// Rota para buscar todos os feedbacks
+app.get('/api/feedbacks', async (req, res) => {
+  try {
+    const feedbacks = await Feedback.find();
+    res.json(feedbacks);
+  } catch (error) {
+    console.error('Erro ao buscar feedbacks:', error);
+    res.status(500).send({ message: 'Erro ao buscar feedbacks.' });
+  }
+});
+
+
+
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

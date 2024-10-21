@@ -8,7 +8,7 @@ body {
   flex-direction: column;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   font-family: 'Roboto Serif', serif;
   font-weight: 700; /* Negrito para cabeçalhos */
 }
@@ -16,6 +16,15 @@ p, a {
   font-family: 'Roboto Serif', serif;
  
 }
+
+h5 {
+  color: #000 !important; /* Define o texto como preto */
+}
+
+.form-label {
+  color: #000 !important; /* Define o texto como preto */
+}
+
 
 header {
   background: #122d8f;
@@ -173,5 +182,10 @@ textarea.form-control {
 
 #feedback button:hover {
   background-color: #0f236e;
+}
+
+.nav-link {
+  transition: color 0.3s ease-in-out;
+  color: #000 !important; /* Adicione essa linha */
 }
 

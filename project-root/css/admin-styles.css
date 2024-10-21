@@ -1,150 +1,50 @@
+/* Estilos gerais */
 body {
-  font-family: 'Roboto Serif', serif;
+    font-family: 'Roboto Serif', serif;
     line-height: 1.6;
-    background-color: #46b910;
+    background-color: #e4e4e4;
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
   }
-
+  
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Serif', serif;
     font-weight: 700; /* Negrito para cabeçalhos */
-}
-p, a{
-  font-family: 'Roboto Serif', serif;
- 
-}
+  }
+  p, a {
+    font-family: 'Roboto Serif', serif;
+   
+  }
   
   header {
     background: #122d8f;
     color: #e4e4e4;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
-}
-
-.navbar-nav {
-    text-align: center;
-}
-
-.navbar-toggler {
-    margin-left: auto;
-}
-
-.container-fluid {
+  }
+  .nav-link {
+    transition: color 0.3s ease-in-out;
+  }
+  .navbar-custom {
+    background-color: #004080;
+  }
+  .container-fluid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.collapse.navbar-collapse {
-    flex-grow: 0; 
-}
-
-.navbar-nav .nav-item {
+  }
+  .navbar-collapse {
+    flex-grow: 0;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-  main {
-    margin-top: 20px;
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
   }
-  
-  section {
-    margin-bottom: 20px;
+  .navbar-toggler {
+    margin-left: auto;
   }
-  
-  footer {
-    background: #122d8f;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 1rem;
-    text-align: center;
-    z-index: 2;
-  }
-
-  .nav-link.btn-custom {
-    background-color: #122d8f; /* Cor de fundo igual ao cabeçalho */
-    color: white; /* Cor do texto */
-  }
-  
-  /* Estilo quando o mouse passa sobre o botão */
-  .nav-link.btn-custom:hover {
-    background-color: #006adc; /* Cor quando passar o mouse (altere conforme necessário) */
-  }
-  
-  .logo-inst-eng {
-    width: 200px;
-    left: 20px;
-    bottom: 80px;
-  }
-  
-  .logo-metro1 {
-    width: 200px;
-    right: 20px;
-    bottom: 80px;
-  }
-  
-  .logo-imt {
-    width: 150px;
-    }
-  
-  .logo-matematica-no-metro2 {
-   max-height: 50px; 
-    width: auto;
-    display: block; 
-  }
-  @media (max-width: 768px) {
-    header img {
-      width: 100%;
-    }
-  }
-  
-.breadcrumb {
-  background-color: #f8f9fa; 
-  padding: 10px 15px; 
-  border-radius: 5px; 
-  margin-top: 20px; 
-  margin-left: 20px;
-}
-
-.breadcrumb-item a {
-  color: #007bff; 
-  text-decoration: none; 
-  font-weight: 300; 
-  transition: color 0.3s ease; 
-}
-
-.breadcrumb-item a:hover {
-  color: #0056b3; 
-}
-
-.breadcrumb-item.active {
-  color: #137cd8; 
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  content: '>'; 
-  color: #1a6fb9; 
-  padding: 0 8px; 
-}
-
-.scrollable-form {
-  max-height: 500px; 
-  overflow-y: auto;  
-  padding: 20px;     
-  border: 1px solid #ddd; 
-  border-radius: 5px; 
-  background-color: #ffffff;
-}
