@@ -178,3 +178,30 @@ footer {
   border-radius: 5px; 
   background-color: #ffffff;
 }
+
+.logo-inst-eng {
+  width: 200px;
+  left: 20px;
+  bottom: 80px;
+}
+
+.logo-metro1 {
+  width: 200px;
+  right: 20px;
+  bottom: 80px;
+}
+
+.logo-imt {
+  width: 150px;
+}
+
+.logo-matematica-no-metro2 {
+  max-height: 50px; 
+  width: auto; 
+  display: block;
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  left: 20px; /* ajuste conforme necessário para o alinhamento horizontal */
+  transform: translateY(-50%)
+}
