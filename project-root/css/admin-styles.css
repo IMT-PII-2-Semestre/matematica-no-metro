@@ -142,7 +142,7 @@ footer {
 }
 
 .breadcrumb {
-  background-color: #f8f9fa; 
+  background-color: #ffffff; 
   padding: 10px 15px; 
   border-radius: 5px; 
   margin-top: 20px; 
@@ -193,6 +193,7 @@ footer {
 
 .logo-imt {
   width: 150px;
+  margin-right: 20px;
 }
 
 .logo-matematica-no-metro2 {
