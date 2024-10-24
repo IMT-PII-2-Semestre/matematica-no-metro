@@ -81,7 +81,7 @@ p, a{
   
   /* Estilo quando o mouse passa sobre o botão */
   .nav-link.btn-custom:hover {
-    background-color: #006adc; /* Cor quando passar o mouse (altere conforme necessário) */
+    background-color: rgb(36, 119, 179); /* Cor quando passar o mouse (altere conforme necessário) */
   }
   
   .logo-inst-eng {
@@ -120,23 +120,23 @@ p, a{
 }
 
 .breadcrumb-item a {
-  color: #007bff; 
+  color: #122d8f; 
   text-decoration: none; 
   font-weight: 300; 
   transition: color 0.3s ease; 
 }
 
 .breadcrumb-item a:hover {
-  color: #0056b3; 
+  color: #122d8f; 
 }
 
 .breadcrumb-item.active {
-  color: #137cd8; 
+  color: #122d8f; 
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
   content: '>'; 
-  color: #1a6fb9; 
+  color: #122d8f; 
   padding: 0 8px; 
 }
 
