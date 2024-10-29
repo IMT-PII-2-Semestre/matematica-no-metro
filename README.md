@@ -59,6 +59,8 @@
 
 - **Front-End**: HTML, CSS, JavaScript e Bootstrap.
 
+- **Back-End**: JavaScript, Node.js e MongoDB.
+
 ---
 
 ## Instalação: 
