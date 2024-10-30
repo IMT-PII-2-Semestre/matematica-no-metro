@@ -58,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             <h5 class="card-title mb-0">${feedback.nome}</h5>
                         </div>
                         <div class="card-body">
-                            <p class="card-text"><strong>Email:</strong> ${feedback.email}</p>
                             <p class="card-text"><strong>Mensagem:</strong> ${feedback.mensagem}</p>
                         </div>
                     </div>
