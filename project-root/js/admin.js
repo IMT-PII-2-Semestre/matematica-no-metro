@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
                         <div class="card-body">
                             <p class="card-text"><strong>Nome:</strong> ${user.nome}</p>
-                            <p class="card-text"><strong>Email:</strong> ${user.email}</p>
                             <p class="card-text"><strong>Telefone:</strong> ${user.telefone || 'N/A'}</p>
                             <p class="card-text"><strong>Curso:</strong> ${user.curso || 'N/A'}</p>
                             <p class="card-text"><strong>Data de Nascimento:</strong> ${user.dataNascimento || 'N/A'}</p>
