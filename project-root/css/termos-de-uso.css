@@ -15,7 +15,11 @@ body {
 
 p, a{
   font-family: 'Roboto Serif', serif;
- 
+}
+.terms-subtitle {
+  font-size: 1.5em;
+  font-family: 'Roboto Serif', serif;
+  margin-top: 20px;
 }
 
   header {
