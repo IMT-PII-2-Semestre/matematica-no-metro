@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Administrador - Matemática no Metrô</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jscharting.com/latest/jscharting.js"></script>
   <link rel="stylesheet" href="../css/admin-styles.css" />
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -95,6 +96,40 @@ Nesta tela, o administrador pode visualizar e gerenciar as informações relacio
       </div>
   </div>
 </div>
+<div class="row mb-5">
+<div class="container mb-5">
+  <h2 class="text-center mb-3 graficos-responsivos-titulos">Gráficos Responsivos</h2>
+</div>
+<div class="container">
+  <h3 class="text-center mb-3">Voluntários e Cursos de Graduação</h3>
+  <div class="row justify-content-center">
+      <div class="col-10 mb-3" id='Voluntários-e-Cursos-de-Graduação' style="width: 60%; height: 400px;"></div>
+  </div>
+</div>
+</div>
+
+<hr class="divider">
+
+<div class="row mb-5">
+<div class="container mb-5">
+  <h3 class="text-center mb-3">Nível de Conhecimento em Matemática</h3>
+  <div class="row justify-content-center">
+      <div class="col-10 mb-3" id="Nível-de-Conhecimento-em-Matemática" style="width: 60%; height: 400px;"></div>
+  </div>
+</div>
+</div>
+
+<hr class="divider">
+
+<div class="row mb-5">
+  <div class="container">
+    <h3 class="text-center mb-3">Número de Voluntários por Período</h3>
+    <div class="row justify-content-center">
+        <div class="col-10 mb-3" id="Número-de-Voluntários-por-Período" style="width: 60%; height: 400px;"></div>
+    </div>
+</div>
+</div>
+
 
     <footer class="text-center text-lg-start text-muted" style="background-color: white;">
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -180,6 +215,64 @@ Nesta tela, o administrador pode visualizar e gerenciar as informações relacio
         </div>
       </footer>
       
+      <script>
+        // Dados dos cursos e número de voluntários
+        const data = [
+            { name: 'Ciência da Computação', y: 8 },
+            { name: 'Sistema da Informação', y: 4 },
+            { name: 'Inteligência Artificial', y: 2 },
+            { name: 'Engenharia', y: 6 },
+            { name: 'Relações Internacionais', y: 1 },
+            { name: 'Administração', y: 2 },
+            { name: 'Design', y: 1 },
+            { name: 'Outros', y: 4 }
+        ];
+
+        const chart = new JSC.Chart('Voluntários-e-Cursos-de-Graduação', {
+            type: 'column',
+            series: [
+                {
+                    points: data
+                }
+            ]
+        });
+    </script>
+
+<script>
+  // Dados dos níveis de conhecimento e número de voluntários
+  const data2 = [
+      { name: 'Básico', y: 2 , color: "#FFCCCC" },
+      { name: 'Intermediário', y: 11 , color: "#FF9999" },
+      { name: 'Avançado', y: 15 , color: "#FF6666" }
+  ];
+
+  const chart2 = new JSC.Chart('Nível-de-Conhecimento-em-Matemática', {
+      type: 'column',
+      series: [
+          {
+              points: data2
+          }
+      ]
+  });
+</script>
+
+<script>
+  // Dados dos períodos e número de voluntários
+  const data3 = [
+            { name: 'Matutino', y: 5 },
+            { name: 'Vespertino', y: 14 },
+            { name: 'Noturno', y: 9 }
+        ];
+
+        const chart3 = new JSC.Chart('Número-de-Voluntários-por-Período', {
+            type: 'line',
+            series: [
+                {
+                    points: data3
+                }
+            ]
+        });
+</script>
       <script src="../js/admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

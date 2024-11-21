@@ -206,3 +206,21 @@ footer {
   left: 20px; /* ajuste conforme necessário para o alinhamento horizontal */
   transform: translateY(-50%)
 }
+
+
+.divider {
+  width: 80%;
+  border-top: 2px solid #000000;
+  margin: 40px auto; /* Centraliza a linha horizontalmente */
+}
+
+.graficos-responsivos-titulos{
+    font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    color: #000913; /* Define uma cor agradável */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+    margin-bottom: 20px; /* Adiciona uma margem inferior */
+    border-bottom: 3px solid #000000; /* Adiciona uma linha inferior */
+    padding-bottom: 10px; 
+}
+
