@@ -163,6 +163,10 @@ textarea.form-control {
   object-fit: cover; 
 }
 
+.voluntario-index {
+  
+}
+
 #feedback {
   background-color: #f8f9fa;
 }
@@ -186,7 +190,9 @@ textarea.form-control {
 
 .nav-link {
   transition: color 0.3s ease-in-out;
-  color: #000 !important; /* Adicione essa linha */
+  color: #000 !important; 
 }
+
+
 
 
