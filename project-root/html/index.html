@@ -43,6 +43,9 @@
               <li class="nav-item">
                 <a class="nav-link btn btn-primary text-white" href="#about">Sobre</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white" href="#contact">Contato</a>
+              </li>
                 <li class="nav-item ms-3">
                   <a href="#" class="nav-link text-black" data-bs-toggle="modal" data-bs-target="#adminLoginModal">
                     <img src="/images/admin.png" alt="Login do Administrador" style="width: 30px; height: 30px;">
@@ -68,11 +71,11 @@
             <div class="modal-body">
               <form id="adminLoginForm">
                 <div class="mb-3">
-                  <label for="adminUsername" class="form-label">Usuário</label>
+                  <label for="adminUsername" class="form-label text-start d-block">Usuário:</label>
                   <input type="text" class="form-control" id="adminUsername" required>
                 </div>
                 <div class="mb-3">
-                  <label for="adminPassword" class="form-label">Senha</label>
+                  <label for="adminPassword" class="form-label text-start d-block">Senha:</label>
                   <input type="password" class="form-control" id="adminPassword" required>
                 </div>
                 <div id="loginError" class="text-danger" style="display: none;">Usuário ou senha incorretos.</div>
@@ -360,11 +363,11 @@
         
       </section>
 
-      <section class="">
+      <section id="contact" class="">
         <span>Outras formas de contato: </span>
         <div class="container text-center mt-5">
           <div class="row mt-3">         
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 text-start">
               <h6 class="text-uppercase fw-bold mb-4">
                 Redes Sociais
               </h6>
@@ -387,13 +390,10 @@
             </div>
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4"></div>
             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4"></div>
-            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-start">
               <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
               <p><img src="/images/casa.png" alt="casa"> São Paulo, Estação Sacomã</p>
-              <p>
-                <img src="/images/e-mail.png" alt="e-mail">
-                matematicanometro@gmail.com
-              </p>
+              <p><img src="/images/e-mail.png" alt="e-mail"> matematicanometro@gmail.com</p>
               <p><img src="/images/chamada-telefonica.png" alt="phone"> (11)98805-5489</p>
               <p><img src="/images/chamada-telefonica.png" alt="phone"> (11)96204-3278</p>
             </div>
@@ -416,7 +416,7 @@
 
       <div class="text-center p-4">
         © 2024 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Matemática no Metrô</a>
+        <a class="text-reset fw-bold">Matemática no Metrô</a>
       </div>
     </footer>
 

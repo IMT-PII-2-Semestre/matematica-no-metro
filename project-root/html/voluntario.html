@@ -118,35 +118,35 @@
     <div class="row justify-content-center">
       <div class="col-md-6">
         <h2 class="text-center mb-4">Cadastro de Usuário</h2>
-        <div class="scrollable-form">
+        <div class="form">
           <form method="POST" action="/cadastrar" id="userForm">
             <div class="mb-3">
-                <label for="nome" class="form-label">Nome Completo</label>
+                <label for="nome" class="form-label">Nome Completo*</label>
                 <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo" required>
             </div>
         
             <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
+                <label for="email" class="form-label">E-mail*</label>
                 <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@exemplo.com" required>
             </div>
         
             <div class="mb-3">
-              <label for="telefone" class="form-label">Telefone</label>
+              <label for="telefone" class="form-label">Telefone*</label>
               <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(11) 00000-0000" maxlength="15" oninput="formatarTelefone(this)">
           </div>
           
             <div class="mb-3">
-                <label for="curso" class="form-label">Qual curso você faz parte?</label>
+                <label for="curso" class="form-label">Qual curso você faz parte?*</label>
                 <input type="text" class="form-control" name="curso" id="curso" placeholder="Ex: Engenharia...">
             </div>
         
             <div class="mb-3">
-                <label for="dob" class="form-label">Data de Nascimento</label>
+                <label for="dob" class="form-label">Data de Nascimento*</label>
                 <input type="date" class="form-control" name="dataNascimento" id="dob">
             </div>
         
             <div class="mb-3">
-                <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico</label>
+                <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico*</label>
                 <select class="form-select" name="nivelConhecimento" id="mathLevel">
                     <option value="" disabled selected>Escolha seu nível</option>
                     <option value="Básico">Básico</option>
@@ -207,7 +207,7 @@
     <section class="">
       <div class="container text-center mt-5">
         <div class="row mt-3">         
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4 text-start">
             <h6 class="text-uppercase fw-bold mb-4">
               Redes Sociais
             </h6>
@@ -230,7 +230,7 @@
           </div>
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4"></div>
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4"></div>
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-start">
             <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
             <p><img src="../images/casa.png" alt="casa"> São Paulo, Estação Sacomã</p>
             <p>
