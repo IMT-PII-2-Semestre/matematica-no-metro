@@ -18,30 +18,37 @@
   <tr>
     <th>Nome</th>
     <th>RA</th>
+    <th>Função</th>
   </tr>
   <tr>
     <td>Henrique Impastaro</td>
     <td>24.01777-9</td>
+    <td>Desenvolvedor Front-end/Documentação</td>
   </tr>
   <tr>
     <td>Cauê Almiron</td>
     <td>24.01734-5</td>
+    <td>Desenvolvedor Front-end/Documentação</td>
   </tr>
   <tr>
     <td>Gustavo Seripierri</td>
     <td>24.00630-0</td>
+    <td>Desenvolvedor Front-end/Documentação</td>
   </tr>
   <tr>
     <td>Murilo Rodrigues</td>
     <td>24.01780-9</td>
+    <td>Desenvolvedor Front-end</td>
   </tr>
   <tr>
     <td>Murilo Kaspar</td>
     <td>24.01178-9</td>
+    <td>Desenvolvedor Fullstack</td>
   </tr>
   <tr>
     <td>Eduardo Kenzo Fujii</td>
     <td>24.00926-0</td>
+    <td>Desenvolvedor Front-end</td>
   </tr>
 </table>
 
