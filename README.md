@@ -78,6 +78,16 @@ Para rodar o o projeto localmente:
   git clone https://github.com/IMT-PII-2-Semestre/matematica-no-metro.git
 ```
 
+- Entre na pasta: 'BACKEND'
+```bash
+  cd ~\matematica_metro\matematica-no-metro\backend
+```
+
+- E rode:
+```bash
+  node server.js
+```
+
 
 ## Sobre o projeto Matemática no Metrô:
 
