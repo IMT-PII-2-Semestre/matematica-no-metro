@@ -113,16 +113,16 @@ footer {
 }
 
 .logo-matematica-no-metro2 {
-  max-height: 50px; 
+  height: 120px; /* Ajuste o valor conforme necessário */
   width: auto; 
   display: block;
-  margin-left: 20px;
+  margin-left: -20px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 20px; /* ajuste conforme necessário para o alinhamento horizontal */
   transform: translateY(-50%);
-  
 }
+
 @media (max-width: 768px) {
   header img {
     width: 100%;
