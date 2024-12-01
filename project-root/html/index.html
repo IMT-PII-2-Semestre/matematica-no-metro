@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header class="header">
+        <header class="header">
       <nav class="navbar navbar-expand-lg navbar-light bg-blue">
         <div class="container-fluid d-flex justify-content-between align-items-center">
           <img
@@ -45,37 +45,10 @@
               <li class="nav-item">
                 <a class="nav-link btn btn-primary text-white" href="#contact">Contato</a>
               </li>
-               
             </ul>
           </div>
-        
         </div>
       </nav>
-    
-      <div class="modal fade" id="adminLoginModal" tabindex="-1" aria-labelledby="adminLoginLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="adminLoginLabel">Login do Administrador</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form id="adminLoginForm">
-                <div class="mb-3">
-                  <label for="adminUsername" class="form-label text-start d-block">Usuário:</label>
-                  <input type="text" class="form-control" id="adminUsername" required>
-                </div>
-                <div class="mb-3">
-                  <label for="adminPassword" class="form-label text-start d-block">Senha:</label>
-                  <input type="password" class="form-control" id="adminPassword" required>
-                </div>
-                <div id="loginError" class="text-danger" style="display: none;">Usuário ou senha incorretos.</div>
-                <button type="button" class="btn btn-secondary" onclick="validateAdminLogin()">Entrar</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
     
     <script>
@@ -246,7 +219,16 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-auto">
-            <a href="#volunteer" class="btn btn-lg btn-warning">Seja um Voluntário</a>
+            <a href="#volunteer">
+            <button class="seja-um-voluntario">
+              <span class="button_lg">
+                <span class="button_sl"></span>
+                <span class="button_text">Seja um Voluntário</span>
+            </span>
+            </button>
+            </a>
+
+            </a>
           </div>
         </div>
       </div>
@@ -376,7 +358,7 @@
         <span>Outras formas de contato: </span>
         <div class="container text-center mt-5">
           <div class="row mt-3">         
-            <div class="col-4 col-sm-4 text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-5">
               <h6 class="text-uppercase fw-bold mb-4">
                 Redes Sociais
               </h6>
@@ -398,7 +380,7 @@
               </p>             
             </div>
             
-            <div class="col-4 col-sm-4 text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-5">
               <h6 class="text-uppercase fw-bold mb-4">Administradores</h6>
               <p>
                 <img src="/images/admin.png" alt="Login do Administrador" style="width: 30px; height: 30px;">
@@ -406,9 +388,8 @@
               </p>
           
             </div>
-            <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4"></div> -->
             
-            <div class="col-4 col-sm-4 text-center">
+            <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-5">
               <h6 class="text-uppercase fw-bold mb-4">Contatos</h6>
               <p><img src="/images/casa.png" alt="casa"> São Paulo, Estação Sacomã</p>
               <p><img src="/images/e-mail.png" alt="e-mail"> matematicanometro@gmail.com</p>
