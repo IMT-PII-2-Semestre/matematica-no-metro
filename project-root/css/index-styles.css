@@ -132,6 +132,8 @@ footer {
 .carousel {
   z-index: 1;
   height: 500px;
+  width: 101vw;
+  left: -20px;
 }
 
 .carousel-inner {
