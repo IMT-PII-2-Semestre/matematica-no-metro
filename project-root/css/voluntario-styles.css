@@ -100,16 +100,17 @@ p, a{
     width: 150px;
     }
   
-  .logo-matematica-no-metro2 {
-   max-height: 50px; 
-    width: auto;
-    display: block; 
-  }
-  @media (max-width: 768px) {
-    header img {
-      width: 100%;
+    .logo-matematica-no-metro2 {
+      height: 120px; /* Ajuste o valor conforme necessário */
+      width: auto; 
+      display: block;
+      margin-left: -20px;
+      position: absolute;
+      top: 60%;
+      left: 20px; /* ajuste conforme necessário para o alinhamento horizontal */
+      transform: translateY(-50%);
     }
-  }
+  
   
 .breadcrumb {
   background-color: #f8f9fa; 
