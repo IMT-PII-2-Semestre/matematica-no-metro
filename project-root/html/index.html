@@ -119,9 +119,23 @@
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  src="/images/carrosel4.jpeg"
+                  class="d-block w-100"
+                  alt="flyer"
+                />
+              </div>
+            <div class="carousel-item active">          
               <img
                 src="/images/metro-teste.png"
                 class="d-block w-100"
@@ -142,6 +156,7 @@
                 alt="Imagem do terminal Sacomã"
               />
             </div>
+           
           </div>
           <button
             class="carousel-control-prev"
@@ -215,7 +230,7 @@
                     <img src="/images/5278.jpg" class="card-img-top" alt="maua" />
                     <div class="card-body">
                         <h5 class="card-title">Por que você deveria se voluntariar?</h5>
-                        <p class="card-text">Dar aulas de matemática no metrô é uma oportunidade única de transformar vidas de forma direta e prática. Além de promover acesso ao conhecimento, você ajuda pessoas a superarem desafios no dia a dia, seja na escola, no trabalho ou na vida pessoal.</p>
+                        <p class="card-text">Dar aulas de Matemática no Metrô é uma oportunidade única de transformar vidas de forma direta e prática. Além de promover acesso ao conhecimento, você ajuda pessoas a superarem desafios no dia a dia, seja na escola, no trabalho ou na vida pessoal.</p>
                     </div>
                 </div>
             </div>
@@ -224,7 +239,7 @@
                     <img src="/images/duvida.jpg" class="card-img-top" alt="maua" />
                     <div class="card-body">
                         <h5 class="card-title">Quem Somos nós?</h5>
-                        <p class="card-text">Somos alunos do IMT (Instituto Mauá de Tecnologia) com uma iniciativa de ensinar matemática </p>
+                        <p class="card-text">O projeto Matemática no Metrô nasceu com a missão de tornar o aprendizado da matemática mais acessível e prático. Em parceria com o Metrô de São Paulo e com o apoio do Instituto Mauá de Tecnologia, esta iniciativa do Instituto de Engenharia busca levar conhecimento diretamente à comunidade, oferecendo um plantão de dúvidas gratuito e acessível na estação Sacomã. </p>
                     </div>
                 </div>
             </div>
@@ -292,7 +307,7 @@
       <script>
         document.getElementById('feedbackForm').addEventListener('submit', async function (e) {
           e.preventDefault(); 
-      
+          
           
           const nome = document.getElementById('feedbackName').value;
           const email = document.getElementById('feedbackEmail').value;
@@ -303,7 +318,11 @@
             nome: nome,
             email: email,
             mensagem: mensagem
+
+            
           };
+
+
       
           try {
             // Enviar os dados para o servidor usando fetch
@@ -318,6 +337,7 @@
             if (response.ok) {
               const result = await response.json();
               alert(result.message);
+              this.reset();
             } else {
               alert('Erro ao enviar o feedback. Por favor, tente novamente.');
             }
@@ -326,6 +346,7 @@
             alert('Erro ao enviar o feedback. Por favor, tente novamente.');
           }
         });
+        
       </script>   
       
       <div id="termos-de-uso-modal" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -435,10 +456,12 @@
           </div>        
         </div>
       </section>
-
-      <div class="text-center p-4">
-        © 2024 Copyright:
-        <a class="text-reset fw-bold">Matemática no Metrô</a>
+      <div class="row"> 
+        <div class="text-center p-4">
+          © 2024 Copyright:
+          <a href="#" class="text-reset fw-bold">Matemática no Metrô</a> | <!-- Adicionando separador -->
+          <a href="../html/termos-de-uso.html" class="text-reset fw-bold">Termos de Uso</a> <!-- Adicionando o link -->
+        </div>
       </div>
     </footer>
 

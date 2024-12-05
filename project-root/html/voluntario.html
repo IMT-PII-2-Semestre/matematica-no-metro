@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Usuário - Matemática no Metrô</title>
+  <title>Seja um voluntario - Matemática no Metrô</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/voluntario-styles.css" />
   <link
@@ -110,64 +110,65 @@
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <h2 class="text-center mb-4">Cadastro de Usuário</h2>
+        <h2 class="text-center mb-4">Seja um voluntario!</h2>
         <div class="form">
           <form method="POST" action="/cadastrar" id="userForm">
             <div class="mb-3">
-                <label for="nome" class="form-label">Nome Completo*</label>
-                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+              <label for="nome" class="form-label">Nome Completo*</label>
+              <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome completo" required>
             </div>
-        
-            <div class="mb-3">
-                <label for="email" class="form-label">E-mail*</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@exemplo.com" required>
-            </div>
-        
-            <div class="mb-3">
-              <label for="telefone" class="form-label">Telefone*</label>
-              <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(11) 00000-0000" maxlength="15" oninput="formatarTelefone(this)">
-          </div>
           
             <div class="mb-3">
-                <label for="curso" class="form-label">Qual curso você faz parte?*</label>
-                <input type="text" class="form-control" name="curso" id="curso" placeholder="Ex: Engenharia...">
+              <label for="email" class="form-label">E-mail*</label>
+              <input type="email" class="form-control" name="email" id="email" placeholder="seuemail@exemplo.com" required>
             </div>
-        
+          
             <div class="mb-3">
-                <label for="dob" class="form-label">Data de Nascimento*</label>
-                <input type="date" class="form-control" name="dataNascimento" id="dob">
+              <label for="telefone" class="form-label">Telefone*</label>
+              <input type="tel" class="form-control" name="telefone" id="telefone" placeholder="(11) 00000-0000" maxlength="15" oninput="formatarTelefone(this)" required>
             </div>
-        
+          
             <div class="mb-3">
-                <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico*</label>
-                <select class="form-select" name="nivelConhecimento" id="mathLevel">
-                    <option value="" disabled selected>Escolha seu nível</option>
-                    <option value="Básico">Básico</option>
-                    <option value="Intermediário">Intermediário</option>
-                    <option value="Avançado">Avançado</option>
-                </select>
+              <label for="curso" class="form-label">Qual curso você faz parte?*</label>
+              <input type="text" class="form-control" name="curso" id="curso" placeholder="Ex: Engenharia..." required>
             </div>
-        
+          
             <div class="mb-3">
-                <label class="form-label">Disponibilidade de Horários</label>
-                <div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="disponibilidade" value="morning" id="morning">
-                        <label class="form-check-label" for="morning">Manhã (das 8h às 11h)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="disponibilidade" value="afternoon" id="afternoon">
-                        <label class="form-check-label" for="afternoon">Tarde (das 12h às 16h)</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="disponibilidade" value="evening" id="evening">
-                        <label class="form-check-label" for="evening">Noite (das 17h às 20h)</label>
-                    </div>
+              <label for="dob" class="form-label">Data de Nascimento*</label>
+              <input type="date" class="form-control" name="dataNascimento" id="dob" required>
+            </div>
+          
+            <div class="mb-3">
+              <label for="mathLevel" class="form-label">Nível de Conhecimento Matemático e Lógico*</label>
+              <select class="form-select" name="nivelConhecimento" id="mathLevel" required>
+                <option value="" disabled selected>Escolha seu nível</option>
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+              </select>
+            </div>
+          
+            <div class="mb-3">
+              <label class="form-label">Disponibilidade de Horários*</label>
+              <div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="disponibilidade" value="morning" id="morning">
+                  <label class="form-check-label" for="morning">Manhã (das 8h às 11h)</label>
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="disponibilidade" value="afternoon" id="afternoon">
+                  <label class="form-check-label" for="afternoon">Tarde (das 12h às 16h)</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="disponibilidade" value="evening" id="evening">
+                  <label class="form-check-label" for="evening">Noite (das 17h às 20h)</label>
+                </div>
+              </div>
+              <div id="checkboxError" class="text-danger" style="display: none;">Selecione pelo menos uma opção de horário.</div>
             </div>
-        
-            <button type="submit" class="btn btn-primary w-100" style="background-color: #122d8f;" >Cadastrar</button>
-        </form>
+          
+            <button type="submit" class="btn btn-primary w-100" style="background-color: #122d8f;">Cadastrar</button>
+          </form>
       </div>
       
         
@@ -280,46 +281,53 @@
 
   </script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelector('#userForm').addEventListener('submit', async (event) => {
-            event.preventDefault(); // Impede o recarregamento da página
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('#userForm').addEventListener('submit', async function (event) {
+      event.preventDefault(); 
 
-            // Coletar os dados do formulário
-            const formData = new FormData(event.target);
+      // Coletar os dados do formulário
+      const formData = new FormData(event.target);
 
-            const data = {
-                nome: formData.get('nome') || '',
-                email: formData.get('email') || '',
-                telefone: formData.get('telefone') || '',
-                curso: formData.get('curso') || '',
-                dataNascimento: formData.get('dataNascimento') || '',
-                nivelConhecimento: formData.get('nivelConhecimento') || '',
-                disponibilidade: formData.getAll('disponibilidade') || [] // Certifique-se de que seja um array
-            };
+      const data = {
+        nome: formData.get('nome') || '',
+        email: formData.get('email') || '',
+        telefone: formData.get('telefone') || '',
+        curso: formData.get('curso') || '',
+        dataNascimento: formData.get('dataNascimento') || '',
+        nivelConhecimento: formData.get('nivelConhecimento') || '',
+        disponibilidade: formData.getAll('disponibilidade') || [] 
+      };
 
-            try {
-                const response = await fetch('/cadastrar', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(data)
-                });
+      if (data.disponibilidade.length === 0) {
+        alert('Por favor, selecione pelo menos uma opção de disponibilidade.');
+        return;
+      }
 
-                if (response.ok) {
-                    const result = await response.json();
-                    alert(result.message);
-                } else {
-                    const error = await response.json();
-                    alert(`Erro: ${error.message}`);
-                }
-            } catch (err) {
-                console.error('Erro ao enviar os dados:', err);
-                alert('Erro ao enviar os dados, tente novamente mais tarde.');
-            }
+      try {
+        const response = await fetch('/cadastrar', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
         });
+
+        if (response.ok) {
+          const result = await response.json();
+          alert(result.message);
+          event.target.reset(); 
+        } else {
+          const error = await response.json();
+          alert(`Erro: ${error.message}`);
+        }
+      } catch (err) {
+        console.error('Erro ao enviar os dados:', err);
+        alert('Erro ao enviar os dados, tente novamente mais tarde.');
+      }
     });
+  });
 </script>
+
 </body>
 </html>
